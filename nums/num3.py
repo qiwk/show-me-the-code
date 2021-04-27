@@ -2,7 +2,7 @@
 import re
 
 def count_word(txt):
-    result=re.findall(r'\b[a-z][a-zA-Z]*\b',txt)
+    result = re.findall(r'[a-zA-Z-]+', txt)
     return len(result)
 
 if __name__ == '__main__':
